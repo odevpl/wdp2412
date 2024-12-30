@@ -1,5 +1,8 @@
 $base-padding: 24px;
 
+/*THESE VARIABLES ONLY DESCRIBE THE COLOUR, 
+  DO NOT USE THESE VARIABLES IF YOU WANT TO CHANGE THE COLOUR ON THE PAGE.*/
+
 $header-topbar-bg: #434343;
 $header-bg: #363636;
 
@@ -11,3 +14,19 @@ $primary: #d58e32;
 $text-color: #2a2a2a;
 
 $form-border-color: #292929;
+
+$primary-botton-tex-color: #fff;
+$btn-background: #2a2a2a;
+
+
+/*-------------------------------------------/*
+//USE THESE VARIABLES IF YOU WANT TO CHANGE THE COLOUR ON THE PAGE!!! */
+
+//Button;
+$bottom-bacground: $btn-background;
+$botton-tex-color: $primary-botton-tex-color;
+$botton-hover-background: $primary;
+$button-icon-color: $text-color;
+$button-icon-border-color: $text-color;
+$button-icon-hover-color: $primary-botton-tex-color;
+$button-icon-hover-background-color: $btn-background;
