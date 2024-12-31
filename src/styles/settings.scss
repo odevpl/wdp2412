@@ -15,7 +15,7 @@ $text-color: #2a2a2a;
 
 $form-border-color: #292929;
 
-$primary-botton-tex-color: #fff;
+$secondary-text-color: #fff;
 $btn-background: #2a2a2a;
 
 
@@ -24,9 +24,15 @@ $btn-background: #2a2a2a;
 
 //Button;
 $bottom-bacground: $btn-background;
-$botton-tex-color: $primary-botton-tex-color;
+$botton-text-color: $secondary-text-color;
 $botton-hover-background: $primary;
 $button-icon-color: $text-color;
 $button-icon-border-color: $text-color;
-$button-icon-hover-color: $primary-botton-tex-color;
+$button-icon-hover-color: $secondary-text-color;
 $button-icon-hover-background-color: $btn-background;
+
+//Feature Box
+$active-icon-color: $secondary-text-color;
+$active-icon-background-color: $primary;
+$active-icon-border-color: $primary;
+$active-text-color: $primary;
