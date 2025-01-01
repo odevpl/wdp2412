@@ -1,8 +1,8 @@
 @import "../../../styles/settings.scss";
 
 .root {
-  box-shadow: 2px 3.464px 6px rgba(1, 2, 2, 0.2);
-  background-color: #ffffff;
+  box-shadow: 2px 3.464px 6px $menu-bar-shadow-color;
+  background-color: $menu-bar-background;
 
   :global(.container) > :global(.row) {
     height: 84px;
@@ -25,26 +25,26 @@
     }
 
     a {
-      color: $text-color;
+      color: $menu-bar-links;
       text-transform: uppercase;
       font-size: 12px;
       padding: 1rem;
       text-decoration: none;
       display: flex;
       align-items: center;
-      border-top: 4px solid #ffffff;
+      border-top: 4px solid $menu-bar-links-border-top;
       font-weight: 500;
       letter-spacing: 1px;
 
       &:hover,
       &.active {
-        background-color: $primary;
-        color: #ffffff;
-        border-color: $primary;
+        background-color: $manu-bar-active-hover-background;
+        color: $menu-bar-active-hover-link;
+        border-color: $menu-bar-active-hover-border-color;
       }
 
       &.active {
-        border-color: $text-color;
+        border-color: $menu-bar-active-border-color;
       }
     }
   }
