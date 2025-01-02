@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 import styles from './ProductBox.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -11,9 +12,12 @@ import {
 import { faStar as farStar, faHeart } from '@fortawesome/free-regular-svg-icons';
 import Button from '../Button/Button';
 
-const ProductBox = ({ name, price, promo, stars }) => (
+const ProductBox = ({ id, name, price, promo, stars }) => (
   <div className={styles.root}>
     <div className={styles.photo}>
+      <Link to={`/product/${id}`}>
+        <img src='./images/logo.png' alt='photo of the furniture' />
+      </Link>
       {promo && <div className={styles.sale}>{promo}</div>}
       <div className={styles.buttons}>
         <Button variant='small'>Quick View</Button>
@@ -23,7 +27,9 @@ const ProductBox = ({ name, price, promo, stars }) => (
       </div>
     </div>
     <div className={styles.content}>
-      <h5>{name}</h5>
+      <h5>
+        <Link to={`/product/${id}`}>{name}</Link>
+      </h5>
       <div className={styles.stars}>
         {[1, 2, 3, 4, 5].map(i => (
           <a key={i} href='#'>
@@ -57,6 +63,7 @@ const ProductBox = ({ name, price, promo, stars }) => (
 
 ProductBox.propTypes = {
   children: PropTypes.node,
+  id: PropTypes.string,
   name: PropTypes.string,
   price: PropTypes.number,
   promo: PropTypes.string,

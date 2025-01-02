@@ -63,16 +63,16 @@
 
   &.active {
     .iconWrapper {
-      color: #ffffff;
+      color: $active-icon-color;
 
       &::after {
-        background-color: $primary;
-        border-color: $primary;
+        background-color: $active-icon-background-color;
+        border-color: $active-icon-border-color;
       }
     }
 
     .content {
-      color: $primary;
+      color: $active-text-color;
     }
   }
 }

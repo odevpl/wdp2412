@@ -1,5 +1,8 @@
 $base-padding: 24px;
 
+/*THESE VARIABLES ONLY DESCRIBE THE COLOUR, 
+  DO NOT USE THESE VARIABLES IF YOU WANT TO CHANGE THE COLOUR ON THE PAGE.*/
+
 $header-topbar-bg: #434343;
 $header-bg: #363636;
 
@@ -11,3 +14,87 @@ $primary: #d58e32;
 $text-color: #2a2a2a;
 
 $form-border-color: #292929;
+
+$secondary-color: #fff;
+$additional-color: #e1e1e1;
+$light-color: #e2e2e2;
+$gray-color: #d8d8d8;
+$light-gray-color: #e0e3ed;
+$dark-grey-color: #a9a9a9;
+$dark-color: #01020233;
+$background-light-color: #f4f5f7;
+$btn-background: #2a2a2a;
+
+
+/*-------------------------------------------/*
+//USE THESE VARIABLES IF YOU WANT TO CHANGE THE COLOUR ON THE PAGE!!! */
+
+//Button;
+$bottom-bacground: $btn-background;
+$botton-text-color: $secondary-color;
+$botton-hover-background: $primary;
+$button-icon-color: $text-color;
+$button-icon-border-color: $text-color;
+$button-icon-hover-color: $secondary-color;
+$button-icon-hover-background-color: $btn-background;
+
+//Feature Box
+$active-icon-color: $secondary-color;
+$active-icon-background-color: $primary;
+$active-icon-border-color: $primary;
+$active-text-color: $primary;
+
+//Product Box
+$productBox-background-text-color: $secondary-color;
+$productBox-border-color: $additional-color;
+$productBox-background-img-color: $background-light-color;
+$productBox-sale-color: $secondary-color;
+$productBox-header-color: $primary;
+$productBox-start-color: $text-color;
+$productBox-border-bottom-color: $text-color;
+$productBox-small-bottom-border-line-color: $primary;
+
+//New furniture border bottom line
+$new-furniture-border-bottom-line: $light-color;
+$new-furniture-nav-text-color: $text-color;
+$new-furniture-dot-background-color: $secondary-color;
+$new-furniture-dot-color: $additional-color;
+$new-furniture-active-hover-dot-color: $primary;
+
+//Product search
+$product-search-border-color: $form-border-color;
+$product-search-right-border-color: $form-border-color;
+$product-search-category-icon-color: $primary;
+$product-search-placeholder: $text-color;
+
+//Comapny claim
+$company-phone-number: $gray-color;
+$company-phone-number-icon: $primary;
+$company-basket-icon: $secondary-color;
+$company-basket-icon-background: $primary;
+$company-basket-counter: $light-gray-color;
+
+//Footer
+$footer-background-color: $footer-bg;
+$footer-header: $secondary-color;
+$footer-links-color: $dark-grey-color;
+$footer-hover-links-color: $secondary-color;
+$footer-bottom-bar-background: $footer-claim-bg;
+$footer-copyright-p: $dark-grey-color;
+$footer-bottom-bar-icon-color: $dark-grey-color;
+$footer-bottom-bar-icon-hover-color: $primary;
+
+//Menu bar
+$menu-bar-shadow-color: $dark-color;
+$menu-bar-background: $secondary-color;
+$menu-bar-links: $text-color;
+$menu-bar-links-border-top: $secondary-color;
+$manu-bar-active-hover-background: $primary;
+$menu-bar-active-hover-link: $secondary-color;
+$menu-bar-active-hover-border-color: $primary;
+$menu-bar-active-border-color: $text-color;
+
+//Top bar
+$top-bar-background-color: $header-topbar-bg;
+$top-bar-links-color: $secondary-color;
+$top-bar-hover-links-color: $primary;

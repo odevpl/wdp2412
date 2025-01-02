@@ -12,12 +12,12 @@
       margin: 0;
       font-size: 17px;
       line-height: 42px;
-      color: rgb(216, 216, 216);
+      color: $company-phone-number;
       font-weight: 500;
 
       .icon {
         font-size: 32px;
-        color: $primary;
+        color: $company-phone-number-icon;
         vertical-align: middle;
         margin-top: -3px;
         margin-right: 0.8rem;
@@ -29,10 +29,10 @@
     .cartBox {
       display: inline-block;
       position: relative;
-      color: #ffffff;
+      color: $company-basket-icon;
 
       .cartIcon {
-        background-color: $primary;
+        background-color: $company-basket-icon-background;
         width: 55px;
         height: 50px;
         border-radius: 3px;
@@ -55,7 +55,7 @@
         align-items: center;
         justify-content: center;
         font-size: 14px;
-        color: rgb(224, 227, 237);
+        color: $company-basket-counter;
         position: absolute;
         top: 50%;
         right: 0;
@@ -64,7 +64,7 @@
 
       &:hover {
         .cartIcon {
-          background-color: lighten($primary, 10%);
+          background-color: lighten($company-basket-icon-background, 10%);
         }
       }
     }
