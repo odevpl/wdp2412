@@ -47,7 +47,7 @@ const NewFurniture = ({ categories, products }) => {
                   <li key={item.id}>
                     <a
                       className={item.id === activeCategory && styles.active}
-                      onClick={() => this.handleCategoryChange(item.id)}
+                      onClick={() => handleCategoryChange(item.id)}
                     >
                       {item.name}
                     </a>
