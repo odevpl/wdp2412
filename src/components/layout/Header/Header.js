@@ -11,7 +11,7 @@ const Header = props => (
   <header className={styles.root}>
     <TopBar />
     <CompanyClaim />
-    <MenuBar />
+    {/* <MenuBar /> */}
   </header>
 );
 

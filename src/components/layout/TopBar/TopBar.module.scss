@@ -41,3 +41,34 @@
     }
   }
 }
+
+
+@media (max-width: 346px){
+  .customCol {
+    width: 60%;
+    flex: 0 0 auto;
+  }
+}
+
+@media (max-width: 504px){
+ .root {
+    ul li {
+      line-height: 35px;
+      
+      a{ 
+        font-size: 10px;
+      }
+    }
+
+    .topOptions ul li {
+      margin-right: 0.8rem;
+    }
+
+    .topMenu ul li {
+      margin-left: 1rem;
+      span {
+        display: none;
+      }
+    }
+  }
+}
