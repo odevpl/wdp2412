@@ -72,3 +72,63 @@
     }
   }
 }
+
+@media(max-width: 500px) {
+  .root {
+    position: relative;
+    .phoneNumber {
+      position: absolute;
+      bottom: -10px;
+      width: 170px;
+      right: 0;
+      p {
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+        .icon {
+          font-size: 20px;
+        }
+      }
+    }
+
+    img {
+      width:120px;
+      height: 60px;
+    }
+
+    .cart {
+      position: absolute;
+      top: 35px;
+      right: 3.5rem;
+      .cartBox {
+        .cartIcon {
+          width: 40px;
+          height: 35px; 
+          font-size: 16px;
+        }
+
+        .cartCounter {
+          width: 20px;
+          height: 19px;
+          font-size: 11px;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 767px){
+  .root .phoneNumber p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    
+    .icon {
+      font-size: 24px;
+      margin-top: 30px  ;
+    }
+  }
+}

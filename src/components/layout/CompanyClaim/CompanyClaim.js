@@ -16,7 +16,7 @@ const CompanyClaim = () => (
             222
           </p>
         </div>
-        <div className='col text-center'>
+        <div className='col text-start text-md-center'>
           <a href='#'>
             <img src='/images/logo.png' alt='Bazar' />
           </a>
