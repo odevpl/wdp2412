@@ -51,6 +51,16 @@
   }
 }
 
+@media (max-width: 991px) and (min-width: 768px) {
+  .root {
+    height: 130px;
+    .mdContainer {
+      height: 100%;
+      align-content: center;
+    }
+  }
+}
+
 @media (max-width: 767px) {
   .root {
     position: relative;

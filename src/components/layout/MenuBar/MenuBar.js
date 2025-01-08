@@ -8,12 +8,12 @@ import styles from './MenuBar.module.scss';
 
 const MenuBar = ({ children }) => (
   <div className={styles.root}>
-    <div className='container'>
+    <div className={`container ${styles.mdContainer}`}>
       <div className='row align-items-center ju'>
-        <div className='col-6 col-md-12 col-xl-6'>
+        <div className='col-6 col-md-12 col-lg-6'>
           <ProductSearch />
         </div>
-        <div className={'col-6 col-md-12 col-xl-6 ' + styles.menu}>
+        <div className={'col-6 col-md-12 col-lg-6 ' + styles.menu}>
           <nav className='navbar navbar-expand-md navbar-light'>
             <button
               className={`navbar-toggler ${styles.myBtn}`}
