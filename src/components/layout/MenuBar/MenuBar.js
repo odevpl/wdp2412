@@ -9,17 +9,14 @@ import styles from './MenuBar.module.scss';
 const MenuBar = ({ children }) => (
   <div className={styles.root}>
     <div className='container'>
-      <div
-        className='row align-items-center justify-content-around
- '
-      >
+      <div className='row align-items-center ju'>
         <div className='col-6 col-md-12 col-xl-6'>
           <ProductSearch />
         </div>
         <div className={'col-6 col-md-12 col-xl-6 ' + styles.menu}>
-          <nav className='navbar navbar-expand-lg navbar-light'>
+          <nav className='navbar navbar-expand-md navbar-light'>
             <button
-              className='navbar-toggler'
+              className={`navbar-toggler ${styles.myBtn}`}
               type='button'
               data-toggle='collapse'
               data-target='#navbarNav'
