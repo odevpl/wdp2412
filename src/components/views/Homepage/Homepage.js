@@ -9,7 +9,7 @@ import NewFurniture from '../../features/NewFurniture/NewFurnitureContainer';
 const Homepage = () => (
   <div className={styles.root}>
     <FeatureBoxes />
-    <NewFurniture />
+    {/* <NewFurniture /> */}
   </div>
 );
 
