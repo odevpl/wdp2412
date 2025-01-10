@@ -65,19 +65,30 @@
   .root {
     position: relative;
 
-    .menu nav button {
-      position: absolute;
-      right: -200px;
-      width: 50px;
-      height: 50px;
-      padding: 0;
-      margin: 0;
-      
-      span {
-        width: 40px;
-        height: 40px;
+    .menu nav {
+      button {
+        position: absolute;
+        right: -200px;
+        width: 50px;
+        height: 50px;
         padding: 0;
         margin: 0;
+        
+        span {
+          width: 40px;
+          height: 40px;
+          padding: 0;
+          margin: 0;
+        }
+      }
+      ul {
+        background-color: $menu-buttom-sm-color;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 290px;
+        left: 0;
+        z-index: 99999999;
       }
     }
   }
@@ -85,15 +96,19 @@
 
 
 @media (max-width: 500px) {
-  .root .menu nav button {
-    width: 30px;
-    height: 30px;
-    right: -100px;
+  .root .menu nav {
+    button {
+      width: 30px;
+      height: 30px;
+      right: -130px;
      
-    span{ 
-      width: 25px;
-      height: 25px;
+      span{ 
+        width: 25px;
+        height: 25px;
+      }
+    }
+    ul {
+      top: 270px;
     }
   }
 }
-
