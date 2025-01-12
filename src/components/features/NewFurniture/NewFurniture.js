@@ -37,7 +37,7 @@ const NewFurniture = ({ categories, products }) => {
     <div className={styles.root}>
       <div className='container'>
         <div className={styles.panelBar}>
-          <div className='row no-gutters align-items-end'>
+          <div className='row flex-sm-row flex-column d-flex align-items-sm-end align-items-center no-gutters align-items-end'>
             <div className={'col-auto ' + styles.heading}>
               <h3>New furniture</h3>
             </div>
@@ -62,7 +62,7 @@ const NewFurniture = ({ categories, products }) => {
         </div>
         <div className='row'>
           {categoryProducts.slice(activePage * 8, (activePage + 1) * 8).map(item => (
-            <div key={item.id} className='col-3'>
+            <div key={item.id} className='col-12 col-sm-6 col-md-4 col-lg-3'>
               <ProductBox {...item} />
             </div>
           ))}
