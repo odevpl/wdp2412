@@ -16,8 +16,8 @@ const Footer = ({ children }) => (
   <footer className={styles.root}>
     <div className={styles.footerMenu}>
       <div className='container'>
-        <div className='row'>
-          <div className='col'>
+        <div className={`row ${styles.rowWidth}`}>
+          <div className={`col ${styles.mobileFooter}`}>
             <div className={styles.menuWrapper}>
               <h6>Information</h6>
               <ul>
@@ -36,7 +36,7 @@ const Footer = ({ children }) => (
               </ul>
             </div>
           </div>
-          <div className='col'>
+          <div className={`col ${styles.mobileFooter}`}>
             <div className={styles.menuWrapper}>
               <h6>My account</h6>
               <ul>
@@ -55,7 +55,7 @@ const Footer = ({ children }) => (
               </ul>
             </div>
           </div>
-          <div className='col'>
+          <div className={`col ${styles.mobileFooter}`}>
             <div className={styles.menuWrapper}>
               <h6>Information</h6>
               <ul>
@@ -74,7 +74,7 @@ const Footer = ({ children }) => (
               </ul>
             </div>
           </div>
-          <div className='col'>
+          <div className={`col ${styles.mobileFooter}`}>
             <div className={styles.menuWrapper}>
               <h6>Orders</h6>
               <ul>
@@ -100,11 +100,11 @@ const Footer = ({ children }) => (
     <div className={styles.bottomBar}>
       <div className='container'>
         <div className='row align-items-center'>
-          <div className='col'></div>
-          <div className={'col text-center ' + styles.copyright}>
+          <div className='col order-1 order-md-0'></div>
+          <div className={'col order-0 order-md-1 text-center ' + styles.copyright}>
             <p>©Copyright 2016 Bazar | All Rights Reserved</p>
           </div>
-          <div className={'col text-right ' + styles.socialMedia}>
+          <div className={'col order-2 text-right ' + styles.socialMedia}>
             <ul>
               <li>
                 <a href='#'>

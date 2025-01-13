@@ -5,6 +5,10 @@
     background-color: $footer-background-color;
     padding: 3rem 0;
 
+    .rowWidth {
+      width: 100%;
+    }
+
     .menuWrapper {
       h6 {
         color: $footer-header;
@@ -77,6 +81,60 @@
               color: $footer-bottom-bar-icon-hover-color;
             }
           }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .root {
+    .footerMenu {
+      .mobileFooter {
+        flex: 0 0 50%;
+      }   
+    }
+    img {
+      width: 170px;
+    }
+    .socialMedia {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 425px){
+  .root {
+    img {
+      width: 140px;
+    }
+
+    .bottomBar {
+      .copyright {
+        p {
+          font-size: 12px;
+        }
+      }
+
+      .socialMedia {
+        ul li a {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .root{
+
+    img {
+      width: 120px;
+    }
+    .bottomBar {
+      .copyright {
+        p {
+          font-size: 8px;
         }
       }
     }
