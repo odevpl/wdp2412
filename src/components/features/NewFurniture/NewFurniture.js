@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
 
 import styles from './NewFurniture.module.scss';
@@ -7,6 +8,7 @@ import ProductBox from '../../common/ProductBox/ProductBox';
 const NewFurniture = ({ categories, products }) => {
   const [activeCategory, setActiveCategory] = useState('bed');
   const [activePage, setActivePage] = useState(0);
+  const viewportMode = useSelector(state => state.viewport || 'desktop');
 
   const handlePageChange = newPage => {
     setActivePage(newPage);
@@ -16,6 +18,21 @@ const NewFurniture = ({ categories, products }) => {
     setActiveCategory(newCategory);
   };
 
+  let productsPerRow = '';
+  let numbersOfRows = 8;
+  if (viewportMode === 'desktop') {
+    productsPerRow = 8;
+    numbersOfRows = 8;
+  } else if (viewportMode === 'tablet') {
+    productsPerRow = 3;
+    numbersOfRows = 3;
+  } else if (viewportMode === 'mediumMobile') {
+    productsPerRow = 2;
+    numbersOfRows = 2;
+  } else {
+    productsPerRow = 1;
+    numbersOfRows = 4;
+  }
   const categoryProducts = products.filter(item => item.category === activeCategory);
   const pagesCount = Math.ceil(categoryProducts.length / 8);
 
@@ -61,11 +78,13 @@ const NewFurniture = ({ categories, products }) => {
           </div>
         </div>
         <div className='row'>
-          {categoryProducts.slice(activePage * 8, (activePage + 1) * 8).map(item => (
-            <div key={item.id} className='col-12 col-sm-6 col-md-4 col-lg-3'>
-              <ProductBox {...item} />
-            </div>
-          ))}
+          {categoryProducts
+            .slice(activePage * productsPerRow, (activePage + 1) * numbersOfRows)
+            .map(item => (
+              <div key={item.id} className='col-12 col-sm-6 col-md-4 col-lg-3'>
+                <ProductBox {...item} />
+              </div>
+            ))}
         </div>
       </div>
     </div>
